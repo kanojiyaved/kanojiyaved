@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/img/profile.jpeg" type="image/jpeg">
+    <style>
+        link[rel="icon"] {
+            border-radius: 50%;
+        }
+    </style>
+    <title>Vedant Kanojiya - Aspiring Data Analyst</title>
+    
+    <!-- Load Inter Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+    <!-- Particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize Particles.js
+            particlesJS('particles-js', {
+                particles: {
+                    number: {
+                        value: 40,
+                        density: {
+                            enable: true,
+                            value_area: 800
+                        }
+                    },
+                    color: {
+                        value: '#3b82f6'
+                    },
+                    shape: {
+                        type: 'circle',
+                        stroke: {
+                            width: 0,
+                            color: '#3b82f6'
+                        }
+                    },
+                    opacity: {
+                        value: 0.8,
+                        random: true,
+                        anim: {
+                            enable: true,
+                            speed: 1,
+                            opacity_min: 0.2,
+                            sync: false
+                        }
+                    },
+                    size: {
+                        value: 4,
+                        random: true,
+                        anim: {
+                            enable: true,
+                            speed: 2,
+                            size_min: 1,
+                            sync: false
+                        }
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 150,
+                        color: '#3b82f6',
+                        opacity: 0.6,
+                        width: 1.5
+                    },
+                    move: {
+                        enable: true,
+                        speed: 3,
+                        direction: 'none',
+                        random: true,
+                        straight: false,
+                        out_mode: 'bounce',
+                        bounce: true,
+                        attract: {
+                            enable: true,
+                            rotateX: 600,
+                            rotateY: 1200
+                        }
+                    }
+                },
+                interactivity: {
+                    detect_on: 'window',
+                    events: {
+                        onhover: {
+                            enable: true,
+                            mode: ['grab']
+                        },
+                        onclick: {
+                            enable: true,
+                            mode: 'push'
+                        },
+                        resize: true
+                    },
+                    modes: {
+                        grab: {
+                            distance: 150,
+                            links: {
+                                opacity: 1
+                            }
+                        },
+                        bubble: {
+                            distance: 200,
+                            size: 10,
+                            duration: 0.5,
+                            opacity: 1
+                        },
+                        repulse: {
+                            distance: 100,
+                            duration: 0.4,
+                            factor: 2,
+                            speed: 1,
+                            maxSpeed: 10,
+                            easing: 'ease-out-quad'
+                        },
+                        push: {
+                            particles_nb: 6
+                        }
+                    }
+                },
+                retina_detect: true
+            });
+
+            const sections = document.querySelectorAll('.animate-startup');
+            sections.forEach((section, index) => {
+                section.style.animationDelay = `${0.3 + index * 0.2}s`;
+            });
+
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            const revealOnScroll = () => {
+                revealElements.forEach((element) => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    const revealPoint = 150;
+                    
+                    if (elementTop < windowHeight - revealPoint) {
+                        element.classList.add('active');
+                    }
+                });
+            };
+
+            revealOnScroll();
+            window.addEventListener('scroll', revealOnScroll);
+
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('mobile-menu');
+                navLinks.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+
+            const navItems = document.querySelectorAll('.nav-links a');
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    navLinks.classList.remove('mobile-menu');
+                    navLinks.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <!-- Particles.js Background -->
+    <div id="particles-js"></div>
+
+    <!-- FIXED NAVIGATION -->
+    <nav class="nav-fixed">
+        <div class="nav-content">
+            <a href="#home" class="nav-brand">VK</a>
+            <div class="nav-links hidden sm:flex">
+                <a href="#about-section">About</a>
+                <a href="#education-section">Education</a>
+                <a href="#internships-section">Internships</a>
+                <a href="#projects-section">Projects</a>
+                <a href="#contact-section">Contact</a>
+            </div>
+            <button class="hamburger sm:hidden" aria-label="Toggle menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+    
+    <div class="main-container">
+        
+        <!-- HOME / NAME & DESCRIPTION -->
+        <header id="home" class="profile-header animate-startup">
+            <div class="profile-header-content">
+                <div class="profile-image-wrapper">
+                    <img src="assets/img/profile.jpeg" alt="Vedant Kanojiya" class="profile-img">
+                </div>
+                <div class="profile-info">
+                    <h1>Vedant Kanojiya</h1>
+                    <p class="role-title">Aspiring Data Analyst</p>
+                    <p class="profile-description">
+                        Passionate data analyst with strong analytical and programming skills, 
+                        dedicated to transforming complex data into actionable insights.
+                    </p>
+                    <div class="profile-location">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        <span>Kanti, Madhya Pradesh, India</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Stats -->
+            <div class="stats-container">
+                <div class="stat-box">
+                    <span class="stat-value">20+</span>
+                    <span class="stat-name">Projects</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-value">3</span>
+                    <span class="stat-name">Internships</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-value">90%</span>
+                    <span class="stat-name">Accuracy</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- ABOUT SECTION -->
+        <section id="about-section" class="reveal">
+            <div class="section-header">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <h2>About Me</h2>
+            </div>
+            <div class="card">
+                <p class="about-text">
+                    I am a motivated aspiring Data Analyst with strong analytical and programming skills, 
+                    particularly in Python-based data processing and visualization. With hands-on experience 
+                    as a Data Science Intern at MMC Convert, I have developed practical data-handling 
+                    and analytical capabilities.
+                </p>
+                <p class="about-text">
+                    I am calm, disciplined, and creative, with a strong interest in technology, gaming, 
+                    music, and business. I aim to build a rewarding career in data analytics while 
+                    continuously improving my skills and exploring new opportunities.
+                </p>
+                
+                <!-- Technical Skills -->
+                <div class="skills-section">
+                    <h3>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="4 17 10 11 4 5"></polyline>
+                            <line x1="12" y1="19" x2="20" y2="19"></line>
+                        </svg>
+                        Technical Skills
+                    </h3>
+                    <div class="skills-container">
+                        <div class="skill-item">
+                            <span class="skill-key">Programming</span>
+                            <span class="skill-val">Python, Pandas, NumPy</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-key">Visualization</span>
+                            <span class="skill-val">Matplotlib, Seaborn, Power BI</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-key">ML / DL</span>
+                            <span class="skill-val">TensorFlow, Scikit-Learn</span>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-key">Foundation</span>
+                            <span class="skill-val">Data preprocessing, analysis</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Personality Traits -->
+                <div class="traits-section">
+                    <h3>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                        Personality Traits
+                    </h3>
+                    <ul class="traits-grid">
+                        <li>Calm and composed under pressure</li>
+                        <li>Creative problem solver</li>
+                        <li>Highly disciplined and organized</li>
+                        <li>Analytical and detail-oriented</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section id="education-section" class="reveal">
+            <div class="section-header">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+                <h2>Education</h2>
+            </div>
+            <div class="education-container">
+                <div class="card education-card">
+                    <div class="edu-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <div class="edu-info">
+                        <h3>St. Paul Senior Secondary School</h3>
+                        <span class="edu-type">Schooling</span>
+                        <p class="edu-loc">Kanti, Madhya Pradesh, India</p>
+                    </div>
+                </div>
+                <div class="card education-card">
+                    <div class="edu-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                        </svg>
+                    </div>
+                    <div class="edu-info">
+                        <h3>Jain Deemed to be University</h3>
+                        <span class="edu-type">Degree</span>
+                        <p class="edu-loc">Bangalore, India</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INTERNSHIPS SECTION -->
+        <section id="internships-section" class="reveal">
+            <div class="section-header">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+                <h2>Internships</h2>
+            </div>
+            <div class="internship-container">
+                <div class="card internship-card">
+                    <div class="intern-header">
+                        <h3>Machine Learning Intern</h3>
+                        <span class="company-tag">RD INFRO TECHNOLOGY</span>
+                    </div>
+                    <ul class="intern-tasks">
+                        <li>Gained hands-on exposure to real-world data workflows</li>
+                        <li>Practiced using analytical, programming, and reporting tools</li>
+                        <li>Improved problem-solving and professional communication skills</li>
+                    </ul>
+                </div>
+                <div class="card internship-card">
+                    <div class="intern-header">
+                        <h3>Data Science Intern</h3>
+                        <span class="company-tag">MMC Convert</span>
+                    </div>
+                    <ul class="intern-tasks">
+                        <li>Automated billing software migration from Reckon Desktop to MYOB</li>
+                        <li>Developed scripts to streamline data transfer and reconciliation</li>
+                        <li>Ensured data integrity and accuracy during migration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects-section" class="reveal">
+            <div class="section-header">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <h2>Projects</h2>
+            </div>
+            <div class="projects-grid">
+
+                <div class="card project-card">
+                    <div class="proj-top">
+                        <h3>Spotify Song Recommender</h3>
+                        <span class="proj-type">Web Application</span>
+                    </div>
+                    <p class="proj-desc">
+                        A web-based application that recommends songs based on user preferences using Spotify's API and machine learning algorithms for music similarity analysis.
+                    </p>
+                    <div class="proj-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Spotify API</span>
+                    </div>
+                    <div class="proj-link">
+                        <a href="https://github.com/kanojiyaved/Spotify-Song-Recommender" target="_blank" title="View on GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="proj-top">
+                        <h3>Normal to Depth Effect Image</h3>
+                        <span class="proj-type">Computer Vision</span>
+                    </div>
+                    <p class="proj-desc">
+                        Python-based project that converts normal 2D images into depth effect images using computer vision techniques for creating immersive 3D-like visual experiences.
+                    </p>
+                    <div class="proj-tech">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>Computer Vision</span>
+                    </div>
+                    <div class="proj-link">
+                        <a href="https://github.com/kanojiyaved/Normal-to-Depth-Effect-Image" target="_blank" title="View on GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="proj-top">
+                        <h3>GRINOVA IDEATHON</h3>
+                        <span class="proj-type">Hackathon Project</span>
+                    </div>
+                    <p class="proj-desc">
+                        Project developed for the GRINOVA IDEATHON, focusing on innovative solutions to real-world problems. Features a responsive web interface with interactive components.
+                    </p>
+                    <div class="proj-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Web Development</span>
+                    </div>
+                    <div class="proj-link">
+                        <a href="https://github.com/kanojiyaved/GRINOVA-IDEATHON" target="_blank" title="View on GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="proj-top">
+                        <h3>F1 2026 Chinese Grand Prix Podium Predictor</h3>
+                        <span class="proj-type">Predictive Analytics</span>
+                    </div>
+                    <p class="proj-desc">
+                        A predictive model for forecasting the podium finishers of the 2026 Chinese Grand Prix using historical F1 data and machine learning algorithms.
+                    </p>
+                    <div class="proj-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Data Analytics</span>
+                    </div>
+                    <div class="proj-link">
+                        <a href="https://github.com/kanojiyaved/F1-2026-Chinese-Grand-Prix-Podium-Predictor" target="_blank" title="View on GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="proj-top">
+                        <h3>Dreamscape</h3>
+                        <span class="proj-type">Web Design</span>
+                    </div>
+                    <p class="proj-desc">
+                        A visually stunning web application showcasing creative design and interactive features. Implements modern CSS animations and responsive layout techniques.
+                    </p>
+                    <div class="proj-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Web Design</span>
+                    </div>
+                    <div class="proj-link">
+                        <a href="https://github.com/kanojiyaved/Dreamscape" target="_blank" title="View on GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card project-card">
+                    <div class="proj-top">
+                        <h3>Ollama ChatBot</h3>
+                        <span class="proj-type">AI Chatbot</span>
+                    </div>
+                    <p class="proj-desc">
+                        A web-based AI chatbot powered by Ollama, featuring natural language processing capabilities. Built with HTML, CSS, and JavaScript for a responsive user interface.
+                    </p>
+                    <div class="proj-tech">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Ollama API</span>
+                    </div>
+                    <div class="proj-link">
+                        <a href="https://github.com/kanojiyaved/Ollama_ChatBot" target="_blank" title="View on GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact-section" class="reveal">
+            <div class="section-header">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <h2>Contact</h2>
+            </div>
+            <div class="card contact-card">
+                <div class="contact-wrapper">
+                    <div class="contact-row">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:vedantkanojiya288@gmail.com">vedantkanojiya288@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Phone</span>
+                                <span>+91 86410 02369</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <span class="contact-label">Location</span>
+                                <span>Kanti, Madhya Pradesh, India</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-wrapper">
+                    <a href="https://www.linkedin.com/in/vedant-kanojiya-376a3b28b/" target="_blank" class="social-btn" title="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/kanojiyaved" target="_blank" class="social-btn" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; 2026 Vedant Kanojiya. All rights reserved.</p>
+                </div>
+                <div class="credits">
+                    <p>Designed by <a href="https://apexonestudio.com" target="_blank">Apex One Studio</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,31 +1,91 @@
 <h1 align="center">Hi 👋, I'm Vedant Kanojiya</h1>
-<h3 align="center">A passionate Data Science Student</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=kanojiyaved&label=Profile%20views&color=0e75b6&style=flat" alt="kanojiyaved" /> </p>
+<h3 align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?lines=Data+Science+Student;Machine+Learning+Engineer;Business+Analytics+Enthusiast;Turning+Data+into+Insights&center=true&width=600&height=60&color=00C2FF&size=24">
+</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=kanojiyaved" alt="kanojiyaved" /></a> </p>
+<!-- <p align="center">
+  <img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=00C2FF&style=for-the-badge" />
+</p> -->
 
-- 🔭 I’m currently working on [Machine leaning](https://github.com/kanojiyaved/RD-INFRO-TECHNOLOGY)
+---
 
-- 🌱 I’m currently learning **Pandas, Tensorflow, Scikitlearn, Matplotlib, Seaborn**
+## 🧠 About Me
 
-- 👯 I’m looking to collaborate on **Machine Learning & Data Science Projects**
+🎓 Data Science Student @ Jain University (CGPA: 8.13)  
+💼 Machine Learning Intern @ RD INFRO TECH  
+📊 Passionate about **Machine Learning, Analytics & AI**  
+🚀 Building real-world projects & participating in hackathons  
 
-- 🤝 I’m looking for help with **Machine Learning**
+---
 
-- 👨‍💻 All of my projects are available at [https://github.com/kanojiyaved](https://github.com/kanojiyaved)
+## ⚡ Tech Stack
 
-- 💬 Ask me about **Machine Learning & Python**
+<p align="center">
 
-- 📫 How to reach me **23btrdc048@gmail.com**
+<img src="https://skillicons.dev/icons?i=python,java" height="70"/>
+<br><br>
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
+<img src="https://skillicons.dev/icons?i=tensorflow" height="70"/>
+<br>
+
+<b style="font-size:16px;">
+Pandas • NumPy • Matplotlib • Seaborn • Scikit-learn • Keras
+</b>
+
+<br><br>
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode" height="70"/>
+
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+---
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=kanojiyaved&show_icons=true&locale=en&layout=compact" alt="kanojiyaved" /></p>
+## 🚀 Featured Projects
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=kanojiyaved&show_icons=true&locale=en" alt="kanojiyaved" /></p>
+🔹 **Credit Card Fraud Detection**  
+→ Built Random Forest model for high-accuracy fraud detection  
+
+🔹 **Movie Genre Prediction (NLP)**  
+→ TF-IDF + ML models (Naive Bayes, Logistic Regression, SVM)  
+
+🔹 **Customer Churn Prediction**  
+→ Identified user behavior patterns using predictive analytics  
+
+🔹 **F1 AI Podium Predictor (2026)**  
+→ AI model using telemetry & historical race data  
+
+---
+
+## 🏆 Highlights
+
+✨ Machine Learning Engineer Experience  
+✨ 5+ Hackathons (CodeWave, ISRO Hackathon, GenAI Exchange)  
+✨ Strong SQL & Data Analysis Skills  
+
+
+## 🌐 Connect With Me
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/vedant-kanojiya-376a3b28b/">
+    <img src="https://skillicons.dev/icons?i=linkedin" height="60"/>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="vedantkanojiya288@gmail.com">
+    <img src="https://skillicons.dev/icons?i=gmail" height="60"/>
+  </a>
+</p>
+
+---
+
+## ⚡ Current Focus
+
+📌 Business Analytics  
+📌 Machine Learning Projects  
+📌 Real-world Data Applications  
+
+---
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00C2FF&height=120&section=footer"/>
+</p>
