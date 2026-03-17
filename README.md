@@ -22,7 +22,7 @@
 ## ⚡ Tech Stack
 
 <p align="center">
-
+ 
 <img src="https://skillicons.dev/icons?i=python,java" height="70"/>
 <br><br>
 
