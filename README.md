@@ -41,6 +41,16 @@ Pandas • NumPy • Matplotlib • Seaborn • Scikit-learn • Keras
 
 ---
 
+## 📈 Contribution Activity
+
+<div align="center">
+
+[![Vedant's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=kanojiyaved&theme=github-compact&hide_border=true&area=true&custom_title=Contribution%20Graph%20—%20Vedant%20Kanojiya)](https://github.com/ashutosh00710/github-readme-activity-graph)
+
+</div>
+
+---
+
 ## 🚀 Featured Projects
 
 🔹 **Credit Card Fraud Detection**  
